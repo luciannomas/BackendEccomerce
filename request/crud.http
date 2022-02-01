@@ -1,0 +1,34 @@
+###
+GET http://localhost:3001/dashboard/products
+
+###  
+POST http://localhost:3001/dashboard/create
+Content-type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNzM0NzA2ZGQxODgzZjM3YzVkODVjNSIsImlhdCI6MTYzNTU0MjI3MiwiZXhwIjoxNjM1NjI4NjcyfQ.Q0lD1sf-rBEqU_0UoZIyvr6UAtqV7jR-UiCIRSjUbXQ
+
+{
+    "name": "el diegoll pa",
+    "description": "xxx xxxx x xdsad saf xxx xxxx",
+    "price": 1100
+}
+
+###
+GET http://localhost:3001/dashboard/product/616642bdeff4e78a5aea2d02
+
+###
+
+GET http://localhost:3001/dashboard/products
+
+###
+DELETE http://localhost:3001/dashboard/delete/617271be0bb91a8d3c74be78
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNzM0NzA2ZGQxODgzZjM3YzVkODVjNSIsImlhdCI6MTYzNDk0NDg0MywiZXhwIjoxNjM1MDMxMjQzfQ.Zy2LW1xx4bsvKHybpd0OKsfZhvOT65BoSeYRYyukWdk
+
+###
+PUT http://localhost:3001/dashboard/product/616e5ba2a2e3f78bdef4e286
+Content-type: application/json
+
+{
+    "name": "xxxx",
+    "description": "xxxx xxxx xxx x xxxx x",
+    "price": 111
+}

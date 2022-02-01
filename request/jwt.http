@@ -1,0 +1,47 @@
+###
+GET http://localhost:3001/dashboard/products
+
+###  
+POST http://localhost:3001/auth/SignUp
+Content-type: application/json
+
+{
+    "username": "eccomerce",
+    "email": "eccomerce@test.com",
+    "password": "eccomerce123",
+    "roles":[
+        "admin"
+    ]
+}
+
+
+###  
+POST http://localhost:3001/auth/SignIn
+Content-type: application/json
+
+{
+    "email": "eldiego@test.com",
+    "password": "diego123"
+}
+
+
+###
+GET http://localhost:3001/dashboard/product/616642bdeff4e78a5aea2d02
+
+###
+
+GET http://localhost:3001/dashboard/products
+
+###
+DELETE http://localhost:3001/dashboard/delete/616e5ba2a2e3f78bdef4e286
+
+###
+
+PUT http://localhost:3001/dashboard/product/616e5ba2a2e3f78bdef4e286
+Content-type: application/json
+
+{
+    "name": "xxxx",
+    "description": "xxxx xxxx xxx x xxxx x",
+    "price": 111
+}
